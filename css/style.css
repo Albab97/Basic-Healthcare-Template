@@ -18,17 +18,18 @@
 }
 
 /*----NAVBAR--- */
-
 nav {
     background-color: var(--primary-color);
     color: #fff;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    position:fixed;
+    width: 100%;
     padding:0 0 0 20px;
     border-bottom: #e7e7e7 1px solid;
     height: 45px;
     font-family: Arial, Helvetica, sans-serif;
+    z-index: 100;
 }
 .brand {
     display: flex;
@@ -69,7 +70,7 @@ ul.items li:not(:first-child):hover {
     background-repeat: no-repeat;
     padding: 50px;
     background-size: cover;
-    height: 418px;
+    height: 465px;
     background-position: top 20% center;
     filter: brightness(85%);
 }
@@ -113,9 +114,10 @@ ul.items li:not(:first-child):hover {
     background-color: #3093a7;
     outline: 1.5px solid #fff;
     color: #fff;
+    transition: ease-in 0.3s;
 }
 
-/* Showcase */
+/* SHOWCASE */
 
 .showcase .showcase-head {
     display: flex;
@@ -174,4 +176,68 @@ ul.items li:not(:first-child):hover {
     background-color: var(--primary-color);
     color: #fff;
     transition: ease-in 0.3s;
+}
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    padding: 30px 0 20px 0;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer .footer-content .social-icons ul{
+    display: flex;
+    list-style: none;
+    margin-bottom: 30px;
+}
+.footer .footer-content .social-icons ul li{
+    margin: 0 8px;
+}
+.footer .footer-content .social-icons ul li .circle{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color:var(--primary-color);
+    text-align: center;
+    outline: 1.5px solid #fff;
+    cursor: pointer;
+}
+.footer .footer-content .social-icons ul li .circle.fb:hover{
+    background-color: rgb(44, 44, 188);
+}
+.footer .footer-content .social-icons ul li .circle.twitter:hover{
+    background-color:rgb(68, 176, 243);
+}
+.footer .footer-content .social-icons ul li .circle.google:hover{
+    background-color:rgb(210, 12, 12);
+}
+.footer .footer-content .social-icons ul li .circle.insta:hover{
+    background-color:purple;
+}
+.footer .footer-content .social-icons ul li .circle.pinterest:hover{
+    background-color:rgb(210, 12, 12);
+}
+.footer .footer-content .social-icons ul li .circle.skype:hover{
+    background-color: rgb(68, 176, 243);
+}
+.footer .footer-content .social-icons ul li .circle a i{
+    font-size: 13px;
+    color: #fff;
+}
+.footer .footer-content .copyright{
+    font-size: 10px;
+    color: #fff;
+}
+.footer .footer-content .copyright a{
+    text-decoration: none;
+    color: rgb(145, 239, 239);
 }
