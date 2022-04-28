@@ -63,6 +63,72 @@ ul.items li:not(:first-child):hover {
     border-bottom: #51c1d7 3px solid;
 }
 
+/* FOOTER */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    padding: 30px 0 20px 0;
+}
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer .footer-content .social-icons ul{
+    display: flex;
+    list-style: none;
+    margin-bottom: 30px;
+}
+.footer .footer-content .social-icons ul li{
+    margin: 0 8px;
+}
+.footer .footer-content .social-icons ul li .circle{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color:var(--primary-color);
+    text-align: center;
+    outline: 1.5px solid #fff;
+    cursor: pointer;
+}
+.footer .footer-content .social-icons ul li .circle.fb:hover{
+    background-color: rgb(44, 44, 188);
+}
+.footer .footer-content .social-icons ul li .circle.twitter:hover{
+    background-color:rgb(68, 176, 243);
+}
+.footer .footer-content .social-icons ul li .circle.google:hover{
+    background-color:rgb(210, 12, 12);
+}
+.footer .footer-content .social-icons ul li .circle.insta:hover{
+    background-color:purple;
+}
+.footer .footer-content .social-icons ul li .circle.pinterest:hover{
+    background-color:rgb(210, 12, 12);
+}
+.footer .footer-content .social-icons ul li .circle.skype:hover{
+    background-color: rgb(68, 176, 243);
+}
+.footer .footer-content .social-icons ul li .circle a i{
+    font-size: 13px;
+    color: #fff;
+}
+.footer .footer-content .copyright{
+    font-size: 10px;
+    color: #fff;
+}
+.footer .footer-content .copyright a{
+    text-decoration: none;
+    color: rgb(145, 239, 239);
+}
+
+/* <--- HOME-PAGE ---> */
+
 /* FRONT-IMAGE */
 
 .front-image {
@@ -178,66 +244,82 @@ ul.items li:not(:first-child):hover {
     transition: ease-in 0.3s;
 }
 
-/* FOOTER */
+/* <---- SERVICES PAGE ----> */ 
 
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    background-color: var(--primary-color);
-    padding: 30px 0 20px 0;
+/* FEATURED */
+
+.featured {
+    background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(../img/gradient-blue-computer.jpg);
+    background-repeat: no-repeat;
+    padding: 60px;
+    background-size: cover;
+    height: 335px;
+    background-position: center;
 }
-.footer-content {
+.featured .head {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 8%;
 }
-.footer .footer-content .social-icons ul{
+.featured .head h4 {
+    color: #fff;
+    font-weight: 350;
+    font-size: 55px;
+}
+.featured .head p {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+/* SHOWCASE-SERVICES */
+
+.showcase-service .cards {
     display: flex;
-    list-style: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.showcase-service .cards .card {
+    width: 280px;
+    padding: 20px;
+    text-align: center;
     margin-bottom: 30px;
 }
-.footer .footer-content .social-icons ul li{
-    margin: 0 8px;
-}
-.footer .footer-content .social-icons ul li .circle{
-    height: 25px;
-    width: 25px;
+.showcase-service .cards .card .image {
+    border: 1.5px solid var(--primary-color);
     border-radius: 50%;
-    background-color:var(--primary-color);
+    height: 110px;
+    width: 110px;
+    margin-left: 60px;
+}
+.showcase-service .cards .card .image i{
+    font-size: 45px;
+    color: #41b3ca;
+    margin: 26px;
+}   
+.showcase-service .cards .card .heading {
+    font-size: 18px;
+    margin: 20px;
+    color: var(--primary-color);
+    font-weight: 380;
     text-align: center;
-    outline: 1.5px solid #fff;
-    cursor: pointer;
 }
-.footer .footer-content .social-icons ul li .circle.fb:hover{
-    background-color: rgb(44, 44, 188);
+.showcase-service .cards .card p {
+    font-size: 11px;
+    line-height: 1.5;
+    word-spacing: 3px;
 }
-.footer .footer-content .social-icons ul li .circle.twitter:hover{
-    background-color:rgb(68, 176, 243);
+.showcase-service .cards .card:hover .image{
+    background-color: #41b3ca;
+    transition: ease-in 0.3s;
 }
-.footer .footer-content .social-icons ul li .circle.google:hover{
-    background-color:rgb(210, 12, 12);
-}
-.footer .footer-content .social-icons ul li .circle.insta:hover{
-    background-color:purple;
-}
-.footer .footer-content .social-icons ul li .circle.pinterest:hover{
-    background-color:rgb(210, 12, 12);
-}
-.footer .footer-content .social-icons ul li .circle.skype:hover{
-    background-color: rgb(68, 176, 243);
-}
-.footer .footer-content .social-icons ul li .circle a i{
-    font-size: 13px;
+.showcase-service .cards .card:hover .image i{
     color: #fff;
-}
-.footer .footer-content .copyright{
-    font-size: 10px;
-    color: #fff;
-}
-.footer .footer-content .copyright a{
-    text-decoration: none;
-    color: rgb(145, 239, 239);
+    transition: ease-in 0.3s;
 }
